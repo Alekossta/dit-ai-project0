@@ -35,6 +35,9 @@ def buyLotsOfFruit(orderList):
     Returns cost of order
     """
     totalCost = 0.0
+    for listItem in orderList:
+        print(listItem)
+        # check to see if item on fruit prices
     "*** YOUR CODE HERE ***"
     return totalCost
 
