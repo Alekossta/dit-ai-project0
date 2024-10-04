@@ -36,11 +36,12 @@ def buyLotsOfFruit(orderList):
     """
     totalCost = 0.0
     for listItem in orderList:
-        print(listItem)
-        # check to see if item on fruit prices
-    "*** YOUR CODE HERE ***"
+        if(listItem[0] in fruitPrices):
+            totalCost += fruitPrices[listItem[0]] * listItem[1]
+        else:
+            print("Fruit like that does not exist")
+            return None
     return totalCost
-
 
 # Main Method
 if __name__ == '__main__':
